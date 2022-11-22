@@ -7,14 +7,16 @@
   vertical-align: baseline;
   list-style: none;
   border: 0;
-  font-family: 'Poppins', sans-serif;
+
+  cursor: none !important;
+   font-family: 'Poppins', sans-serif;
 }
 
 #myCanvas {
   background-color: #1f1f1f;
 }
 
-section {
+header {
   /* width: 50px; */
   height: 50px;
   position: absolute;
@@ -32,7 +34,7 @@ section {
 }
 
 body {
-  cursor: none !important;
+ 
   background-color: #1D1D1D;
 
 }
@@ -46,14 +48,14 @@ button {
   color: #08FDD8;
 }
 
-section>h1 {
+header>h1 {
   color: #08FDD8;
   font-size: 3rem;
   font-weight: bold;
 }
 
 menu {
-  width: 8rem;
+  width: 9rem;
   background-color: #181818;
   height: 100vh;
   position: fixed;
@@ -91,7 +93,7 @@ menu>nav>a {
   text-align: center;
   width: 100%;
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #909096;
   line-height: 3rem;
   border-bottom: 1px solid #282828;
@@ -101,7 +103,7 @@ menu>nav>a {
   text-decoration: none;
 }
 
-menu>nav>img {
+menu >nav > img {
   width: 90%;
 }
 
@@ -113,8 +115,12 @@ menu>nav>img {
   z-index: -1;
 }
 
+nav a:hover{
+  color: #08FDD8;
+  background-color: rgba(0, 255, 255, 0.116) ;
+}
 .work {
-
+  font-size: .8rem;
   position: relative;
   top: -1rem;
   color: white;
@@ -122,6 +128,7 @@ menu>nav>img {
 }
 
 .name {
+  font-size: .9rem;
   font-weight: bold;
   position: relative;
   top: -1rem;
@@ -182,4 +189,16 @@ menu>nav>img {
   opacity: 0.2;
   transform: translate(-30%, -30%);
   border-radius: 50%;
+}
+
+section{
+  
+}
+
+div > img {
+  position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5%;
 }
