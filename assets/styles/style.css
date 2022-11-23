@@ -8,13 +8,10 @@
   list-style: none;
   border: 0;
 
-  cursor: none !important;
+  /* cursor: none !important; */
    font-family: 'Poppins', sans-serif;
 }
 
-#myCanvas {
-  background-color: #1f1f1f;
-}
 
 header {
   /* width: 50px; */
@@ -49,6 +46,7 @@ button {
 }
 
 header>h1 {
+  z-index: -2;
   color: #08FDD8;
   font-size: 3rem;
   font-weight: bold;
@@ -195,10 +193,46 @@ section{
   
 }
 
-div > img {
+a > img {
   position: absolute;
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 5%;
+}
+a > img {
+  animation: lightsOn 1s infinite alternate;
+}
+
+@keyframes lightsOn {
+
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
+@keyframes filterGlow {
+
+  from {
+    filter: none;
+  }
+
+  to {
+    filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.9));
+  }
+
+}
+ 
+body {
+ 
+}
+
+#myCanvas {
+  left: 0;
+  top: 0;
+
 }
