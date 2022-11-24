@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
 
+
+
 * {
   padding: 0;
   margin: 0;
@@ -46,11 +48,52 @@ button {
 }
 
 header>h1 {
-  z-index: -2;
+ 
+
+}
+header>h1> a {
+  z-index: 2;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: none;
+ 
+}
+
+.line{
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 3em;
+  z-index: 2;
   color: #08FDD8;
   font-size: 3rem;
   font-weight: bold;
 }
+.typing-animation{
+  animation: animation 500ms infinite normal;
+}
+
+@keyframes animation {
+  from{
+    border-right-color:#08FDD8;
+  }
+  to{
+    border-right-color:transparent;
+  }
+}
+header>h1> a:hover {
+  z-index: 2;
+  color: #08FDD8;
+  font-weight: bold;
+  text-decoration: none;
+
+ 
+}
+
+
+
+
+
 
 menu {
   width: 9rem;
@@ -87,7 +130,7 @@ menu>nav {
 
 }
 
-menu>nav>a {
+menu>nav>a{
   text-align: center;
   width: 100%;
   display: block;
@@ -152,21 +195,6 @@ nav a:hover{
   left: -7px
 }
 
-.cursor {
-  z-index: 999;
-  position: fixed;
-  background: #2696E8;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  pointer-events: none;
-  box-shadow: 0 0 20px #2696E8,
-    0 0 60px #2696E8,
-    0 0 100px #2696E8;
-  animation: colors 5s infinite;
-  transform: translate(-50%, -50%);
-  display: none;
-}
 
 @keyframes colors {
   0% {
