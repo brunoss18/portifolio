@@ -308,7 +308,10 @@ nav a:hover{
 }
 
 section{
-  
+  position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
 }
 
 a > img {
@@ -353,4 +356,9 @@ body {
   left: 0;
   top: 0;
 
+}
+canvas.canvas {
+  max-width: 100%;
+  margin: 0 auto 0;
+  display: block;
 }
