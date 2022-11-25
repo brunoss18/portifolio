@@ -17,19 +17,17 @@
 
 header {
   /* width: 50px; */
-  height: 50px;
+  height: 200px;
   position: absolute;
-  top: 40%;
-  left: 15%;
+  top: 50%;
+  left: 19%;
   margin: -25px 0 0 -25px;
-
-
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-content: center;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 body {
@@ -63,15 +61,107 @@ header>h1> a {
 .line{
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   color: rgba(255, 255, 255, 0.75);
-  font-size: 3em;
-  z-index: 2;
+  font-size: 1.5em;
+   z-index: 2;
   color: #08FDD8;
-  font-size: 3rem;
   font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  /* text-align: left; */
 }
+ .line-2{
+  margin-top: 1rem;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5em;
+   z-index: 2;
+  color: #08FDD8;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  /* text-align: center; */
+}
+ .line-3{
+  margin-top: 1rem;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5em;
+   z-index: 2;
+  color: #08FDD8;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  /* text-align: center; */
+} 
+.line-4{
+  margin-top: 1rem;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5em;
+   z-index: 2;
+  color: #08FDD8;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  /* text-align: center; */
+} 
 .typing-animation{
-  animation: animation 500ms infinite normal;
+  animation: animation 500ms steps(40) infinite normal, typing 1s steps(40) 1s normal both;
 }
+
+.typing-animation-2{
+  animation: animation 500ms steps(40) infinite normal, typing-2 3s steps(40) 1s normal both;
+}
+
+ .typing-animation-3{
+  animation: animation 500ms steps(40) infinite normal, typing-3 4s steps(40) 1s normal both;
+}
+
+.typing-animation-4{
+  animation: animation 500ms steps(40) infinite normal, typing-4 5s steps(40) 1s normal both; 
+}
+@keyframes typing {
+  from {
+   width: 0;
+  }
+
+  to {
+    width: 2em;
+  }
+}
+@keyframes typing-2 {
+  from {
+   width: 0;
+  }
+
+  to {
+    width: 12em;
+  }
+}
+@keyframes typing-3 {
+  from {
+   width: 0;
+  }
+
+  to {
+    width: 10em;
+  }
+}
+@keyframes typing-4 {
+  from {
+   width: 0;
+  }
+
+  to {
+    width: 18em;
+  }
+}
+
+
+
+
+
+
 
 @keyframes animation {
   from{
