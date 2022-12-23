@@ -6,53 +6,99 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/styles/style.css">
-  <link rel="stylesheet" href="assets/styles/css.css">
+ 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Portifolio - Bruno Soares</title>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 </head>
 
 <body>
-  <canvas style="position: absolute;left:0;z-index: 0;" id="myCanvas" width="1366" height="657"></canvas>
+  <nav>
+    <a href="">Sobre</a>
+    <a href="">Habilidades</a>
+    <a href="">Contato</a>
+    <a href="">Projetos</a>
+  </nav>
   <section>
-    <div id="geo-globe">
-      <canvas id="canvas"></canvas>
-    </div>
+    <!-- <canvas style="position: absolute;left:0;z-index: 0;" id="myCanvas" width="1366" height="657"></canvas> -->
+    <main>
+      <section class="flex-main">
+        <div class="h1-style">
+          <h1 class="line typing-animation">Olá,</h1>
+          <h1 class="line-2 typing-animation-2"> Me chama Bruno Soares, </h1>
+          <h1 class="line-3 typing-animation-3"> Desenvolvedor Web </h1>
+          <h1 class="line-4 typing-animation-4"> Seja bem-vindo(a) ao meu Portifolio</h1>
+        </div>
+        <div class="geo">
+          <div id="geo-globe">
+            <canvas id="canvas"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <div class="arrow">
+        <a href="#about">
+          <img src="/assets/images/svgs/arrow.svg" alt="">
+        </a>
+        <div>
+
+    </main>
+
+
+
+
+
 
   </section>
-  <menu>
-    <nav>
-      <div class="main-menu-top">
-        <span class="logo">B</span>
-        <span class="name">Bruno Soares</span>
-        <span class="work">Desenvolvedor Web</span>
-      </div>
-      <a href="">Sobre</a>
-      <a href="">Habilidades</a>
-      <a href="">Contato</a>
-      <a href="">Projetos</a>
-    </nav>
+  <section id="about">
 
-  </menu>
-  <header>
 
-    <p class="line typing-animation">
-      Olá,
+
+
+    <h2>Sobre</h2>
+
+    <div class="history-p1">
+      <p>Nascido e criado em suzano-SP, tive meu primeiro contato com tecnologia aos 13 anos fazendo um curso de logica
+        de programação utilizando a linguagem de programação blockly com isso desbravava em minha imaginação criando
+        diversos joguinhos no app inventor </p>
+        <img  id="" src="/assets/images/notebook-facebook.jpg" alt="">
+    </div>
+
+    <div class="history-p2">
+      <img src="/assets/images/hd-novo.png" alt="">
+      <p>aos 15 anos houve um pequeno desvio de caminho e comecei a empreender a (Helps) prestando
+      serviços de suporte em T.I e com isso consegui me estabecer e manter suporte a mais de 3 empresas de segmentos
+      diferetes em minha cidade simultanemente voltei a estudar programação focando no desenvolvimento web a principio
+      desenvolvia em HTML5 e também CSS3 </p>
+     
+    </div>
+   
+
+    <div class="history-p3">
+      <p>
+      com isso surgiu uma oportunidade para atuar como professor de informática na estituição de ensino (Guarda Mirim de
+      suzano) lá ministrava aulas para alunos e colaboradores de informatica do basico ao avançado e também modulos não
+      relacionados a tecnologia,
     </p>
-    <p class="line-2 typing-animation-2"> Me chama Bruno Soares, </p>
-    <p class="line-3 typing-animation-3"> Desenvolvedor Web </p>
-    <p class="line-4 typing-animation-4"> Seja bem-vindo(a) ao meu Portifolio</p>
+    <img src="/assets/images/ministrando-aula.png" alt="">
+   
+    </div>
 
-  </header>
-  <div class="arrow">
-    <a href="">
-      <img src="/assets/images/svgs/arrowheaddown.svg" alt="">
-    </a>
-    <div>
 
-      </section>
-      <script type="text/javascript" src="assets/javascript/animation.js"></script>
-      <script type="text/javascript" src="assets/javascript/pointer.js"></script>
+    <div class="history-p4">
+      <img src="/assets/images/bruno-perfil.jpg" alt="">
+      <p>
+      voltando a minha historia com programação ;D comecei estudar javascript e alguns frameworks tais como ReactJS,
+      NodeJS, ExpressJS e com isso obtive minha primeira experiencia profissional atuando como desenvolvedor Front-End
+      atualmente sou desenvolvedor com conhecimento nas linguagens e frameworks a seguir: HTML5, CSS3, BOOTSTRAP,
+      JAVASCRIPT, REACTJS, NODEJS, EXPRESSJS, PHP, LARAVEL, MONGODB, SQLITE. e sempre estarei disposto a aprender
+    </p>
+    
+  </div>
+  </section>
+
+  <script type="text/javascript" src="assets/javascript/animation.js"></script>
+  <script type="text/javascript" src="assets/javascript/pointer.js"></script>
 </body>
 
 </html>
